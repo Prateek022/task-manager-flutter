@@ -1,17 +1,37 @@
-# task_manager
+# Task Manager - Flutter App
 
-A new Flutter project.
+A functional and visually polished Task Management app built with Flutter.
 
-## Getting Started
+## Track
+**Track B: Mobile Specialist** - Local database using SQLite (sqflite)
 
-This project is a starting point for a Flutter application.
+## Features
+- Create, Read, Update, Delete tasks
+- Task fields: Title, Description, Due Date, Status, Blocked By
+- Blocked tasks appear greyed out with a lock icon
+- Draft saving when navigating away from task creation
+- Search tasks by title
+- Filter tasks by status (All, To-Do, In Progress, Done)
+- 2-second simulated loading state on save with disabled button
 
-A few resources to get you started if this is your first Flutter project:
+## Setup Instructions
+1. Install Flutter: https://flutter.dev/docs/get-started/install
+2. Clone the repository:
+   git clone https://github.com/Prateek022/task-manager-flutter.git
+3. Navigate to project folder:
+   cd task-manager-flutter
+4. Install dependencies:
+   flutter pub get
+5. Run the app:
+   flutter run
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Tech Stack
+- Flutter & Dart
+- SQLite (sqflite) for local database
+- SharedPreferences for draft saving
+- UUID for unique task IDs
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## AI Usage
+- Used Claude (Anthropic) to generate the initial code structure, database helper, and UI components
+- Claude helped debug PATH issues during Flutter installation
+- All code was reviewed and tested manually on a Nothing Phone 2a
